@@ -1,6 +1,16 @@
 # Customer & Revenue Analytics Dashboard
 
-An end-to-end data analytics project focused on customer segmentation, revenue performance and churn analysis using Python and Power BI.
+An end-to-end data analytics project focused on customer segmentation, revenue performance and churn analysis using Python, Jupyter Notebook and Microsoft Power BI.
+
+## Dashboard Preview
+
+![Customer & Revenue Analytics Dashboard](images/Finance_Dashboard-1.png)
+
+**Dashboard files:**
+- [View Dashboard PDF](reports/Finance_Dashboard.pdf)
+- [Download Power BI Dashboard](powerbi/Finance_Dashboard.pbix)
+
+To interact with the dashboard, download the PBIX file and open it using Power BI Desktop.
 
 ## Project Overview
 
@@ -24,18 +34,18 @@ The analysis uses customer and transaction data from a simulated subscription-ba
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
-- Power BI
+- Microsoft Power BI
 - DAX
 
 ## Dataset Overview
 
-| Dataset              | Records |
-| -------------------- | ------: |
-| Customer data        |   5,000 |
-| Transaction data     | 135,218 |
-| Monthly revenue data |      60 |
+| Dataset | Records |
+|---|---:|
+| Customer data | 5,000 |
+| Transaction data | 135,218 |
+| Monthly revenue data | 60 |
 
-**Data note:** The dataset represents a simulated subscription-based business.
+**Data note:** The dataset represents a simulated subscription-based business. The original source and redistribution licence should be verified before redistributing the raw data. Currency units are undocumented, so revenue is reported in unspecified revenue units.
 
 ## Analysis Workflow
 
@@ -68,9 +78,7 @@ Customers were classified into six segments using custom RFM scoring rules:
 - Hibernating
 - Others
 
-## Power BI Dashboard
-
-The interactive dashboard includes:
+## Power BI Dashboard Features
 
 - Total Customers
 - Churned Customers
@@ -81,9 +89,7 @@ The interactive dashboard includes:
 - Churn rate by segment
 - Revenue contribution by segment
 - Average revenue per customer by segment
-- Customer segment slicer
-
-
+- Interactive customer segment slicer
 
 ## Business Recommendations
 
@@ -93,19 +99,44 @@ The interactive dashboard includes:
 - Improve loyalty initiatives for Loyal Customers.
 - Monitor customer activity and revenue trends regularly.
 
+These recommendations are hypotheses based on observed patterns and should be tested before implementation.
+
 ## Project Limitations
 
 - This analysis is descriptive, not a predictive churn model.
 - RFM segment definitions use custom rules for this project.
 - The dataset is simulated and does not establish actual banking or company performance.
-- Recommendations are hypotheses to test, not proven business outcomes.
+- Recommendations are not proven business outcomes.
 
-## Project Structure
+## Repository Structure
 
-- `notebooks/` – Python analysis notebook
-- `powerbi/` – Power BI report
-- `reports/` – PDF dashboard export
-- `images/` – Dashboard preview
-- `data/` – Dataset documentation
+```text
+Customer-Revenue-Analytics/
+│
+├── images/
+│   └── Finance_Dashboard-1.png
+│
+├── notebooks/
+│   └── 01_data_understanding.ipynb
+│
+├── powerbi/
+│   └── Finance_Dashboard.pbix
+│
+├── reports/
+│   └── Finance_Dashboard.pdf
+│
+├── README.md
+└── LICENSE
+```
 
+## How to View the Project
 
+1. Explore the Python notebook in the `notebooks` folder.
+2. View the static dashboard in the PDF report.
+3. Download the `.pbix` file and open it in Power BI Desktop to interact with the dashboard.
+
+## Author
+
+**Nagendra Dubey**
+
+[GitHub](https://github.com/Dubey125) · [LinkedIn](https://www.linkedin.com/in/nagendra-dubey/)
